@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Гра в міста 🌇</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>Гра в міста 🌇</h3>
+    <p><span id="playername">Ніхто</span> | <span id="gamename">не в грі</span></p>
+
+<div class="flex-container">
+<div class="section" id="s-words">
+<p>Слова:</p>
+<div id="words-wrap" class="wrap">
+<ul id="words"></ul>
+</div>
+
+
+<form id="form-word" action="">
+  <input id="m" autocomplete="off" /><button>Відправити</button>
+</form>
+
+</div>
+
+<div class="section" id="s-players">
+<p>Гравці:</p>
+<div id="players-wrap" class="wrap">
+<ul id="players"></ul>
+</div>
+
+<button id="button-start">Почати</button>
+<button id="button-leave">Вийти</button>
+</div>
+
+<div class="section" id="s-games">
+<p>Список ігор:</p>
+<div id="games-wrap" class="wrap">
+<select id="select-games" name="games" size="10">
+</select>
+</div>
+
+<form id="form-playername" action="">
+  <input id="pn" autocomplete="off" placeholder="Ім'я гравця"/><button>Приєднатися</button>
+</form>
+
+<form id="form-creategame" action="">
+  <input id="gn" autocomplete="off" placeholder="Назва нової гри"/><button>Створити гру</button>
+</form>
+</div>
+</div>
+
+<div id="notification"></div>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="https://code.jquery.com/jquery-1.11.1.js"></script>
+  <script src="client.js"></script>
+  </body>
+</html>

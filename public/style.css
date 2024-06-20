@@ -1,0 +1,85 @@
+body {
+    font-family: sans-serif;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.section {
+    flex-grow: 1;
+    width: 0;
+}
+
+p, h3 {
+    margin: 5px;
+}
+
+.player-me {
+    /*color: green;*/
+}
+
+.player-me::after {
+    content: " (Ви)";
+    color: gray;
+    font-style: italic
+}
+
+.player-active {
+    background: lightgray;
+}
+
+.player-active.player-me {
+    background: lightgray;
+    color: green;
+}
+#notification {
+    border: 1px solid black;
+    background-color: #F2E8CE;
+    padding: 10px;
+    margin: 5px;
+    max-width: 400px;
+}
+
+.wrap {
+    border: 1px solid;
+    height: 300px;
+    overflow: auto;
+    margin: 5px;
+    
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+li, option {
+    padding: 2px 5px 2px 5px;
+    font-size: 16px;
+}
+li:nth-child(odd){
+    background: #eee;
+}
+
+option:nth-child(odd){
+    background: #eee;
+}
+
+#words li:last-child{
+    color: darkgoldenrod
+}
+
+#select-games {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    overflow: auto;
+}
+
+input, button {
+    border: 1px solid black;
+    font-size: 1em;
+    margin: 5px;
+}
